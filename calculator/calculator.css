@@ -88,4 +88,6 @@
 
 .clear{
     clear: both;
+    color: rgb(199, 199, 199);
+    text-align: center;
 }
