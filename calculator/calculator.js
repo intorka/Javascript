@@ -33,3 +33,10 @@ function clean()
     document.getElementById('output').value = inputs;
     document.getElementById("output").style.background = "#E7E7E7";
 }
+
+function getBack()
+{
+    inputs = inputs.substr(0,inputs.length-1);
+    document.getElementById("input").value = inputs;
+}
+
