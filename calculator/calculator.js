@@ -8,6 +8,7 @@ function getData(value)
 
 function result()
 {
+    document.getElementById("output").style.background = "#E7E7E7";
     try {
         if(inputs != '')
         {
