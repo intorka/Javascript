@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="content">
+        <div class="title">Calculator</div>
+        <div class="screen">
+            <input type="text" id="input" class="input" value="" readonly>
+            <input type="text" id="output" class="output" readonly value="">
+            <div class="clear"></div>
+        </div>
+        <div class="buttons">
+            <div class="numbers">
+                <input type="button" id="sieben" class="number" value="7" onclick="getData(this.value)">
+                <input type="button" id="acht" class="number" value="8" onclick="getData(this.value)">
+                <input type="button" id="neun" class="number" value="9" onclick="getData(this.value)">
+                <input type="button" id="vier" class="number" value="4" onclick="getData(this.value)">
+                <input type="button" id="funf" class="number" value="5" onclick="getData(this.value)">
+                <input type="button" id="sechs" class="number" value="6" onclick="getData(this.value)">
+                <input type="button" id="eins" class="number" value="1" onclick="getData(this.value)">
+                <input type="button" id="zwei" class="number" value="2" onclick="getData(this.value)">
+                <input type="button" id="drei" class="number" value="3" onclick="getData(this.value)">
+                <input type="button" id="zero" class="number" value="0" style="width: 105px;" onclick="getData(this.value)">
+                <input type="button" id="comma" class="number" value="." onclick="getData(this.value)">
+            </div>
+            <div class="actions">
+                <div class="row">
+                    <input type="button" id="ac" class="number" value="C" onclick="clean()">
+                    <input type="button" id="sign" class="number" value="-/+">
+                </div>
+                <div class="row">
+                    <input type="button" id="division" class="number" value="/" onclick="getData(this.value)">
+                    <input type="button" id="einmal" class="number" value="x" onclick="getData(this.value)">
+                </div>
+                <div class="row">
+                    <input type="button" id="minus" class="number" value="-" onclick="getData(this.value)">
+                    <input type="button" id="plus" class="number" value="+" onclick="getData(this.value)">
+                </div>
+                <input type="button" id="gleich" class="number" value="=" style="width: 105px;" onclick="result()">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <script src="calculator.js" ></script>
+</body>
+</html>
