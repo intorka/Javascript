@@ -1,3 +1,15 @@
+// This function run automatically when the page loaded...
+(function() {
+
+    // Generate the date.
+    var today  = new Date();
+    year = today.toLocaleDateString("de-DE");
+    thisYear = year.substr(year.length-4, 4); // Taking only year...
+
+    document.getElementById("year").innerHTML = thisYear;
+ })();
+
+
 var inputs = "";
 function getData(value)
 {
