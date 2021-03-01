@@ -1,14 +1,15 @@
 .content {
     background-color: rgb(133, 132, 132);
     width: 300px;
-    /* height: 400px; */
+    border-radius: 10px;
     margin: auto;
     padding: 5px;
+    
 }
 .title {
     font-size: larger;
     font-weight: bold;
-    color: honeydew;
+    color: rgb(169, 211, 248);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5em;
